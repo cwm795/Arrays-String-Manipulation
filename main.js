@@ -10,13 +10,16 @@ function runApp() {
     let reverse = input.split("").reverse().join("");
     let div = document.createElement("div");
     let reverseText = document.createTextNode(reverse);
-    console.log(reverseText);
     output.appendChild(div);
     div.appendChild(reverseText);
   }
 
 function alphabits() {
-
+let alphabet = input.split("").sort().join("");
+let div = document.createElement("div");
+let orderText = document.createTextNode(alphabet);
+output.appendChild(div);
+div.appendChild(orderText);
 }
 
 function palindrome() {
