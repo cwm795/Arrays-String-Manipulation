@@ -23,6 +23,15 @@ div.appendChild(orderText);
 }
 
 function palindrome() {
+     reversible = input.split("").reverse().join("");
+     let div = document.createElement("div");
+     let newText = document.createTextNode(reversible );
+
+     output.appendChild(div);
+     div.appendChild(newText);
+     if (reversible === input) {
+       output.innerHTML = "Your String is a Palindrome";
+     }
 
 }
 
@@ -31,7 +40,8 @@ function palindrome() {
 
 
   reversal(input);
-  alphabits(input)
+  alphabits(input);
+  palindrome(input);
 }
 
 
